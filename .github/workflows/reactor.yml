@@ -1,6 +1,8 @@
-on : push
-name : Really cool Reactor demo
-jobs : 
-  build-job : 
-    name : Build .Net Project
-    
+on: push
+name: Really cool Reactor demo
+jobs:
+  build-job:
+    name: Build .Net Project
+    steps:
+      - run: dotnet --version
+        name: Check .Net Version
