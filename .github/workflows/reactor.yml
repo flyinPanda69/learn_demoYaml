@@ -3,6 +3,7 @@ name: Really cool Reactor demo
 jobs:
   build-job:
     name: Build .Net Project
+    runs-on : ubuntu-latest
     steps:
       - run: dotnet --version
         name: Check .Net Version
